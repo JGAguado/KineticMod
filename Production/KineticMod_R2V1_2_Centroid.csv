@@ -1,0 +1,26 @@
+Screaming Circuits SMD component position file.
+
+Centroid Data for pc board: "KineticMod.brd" as of: 03/03/2020 19:40
+Measurements are in inches. Comma delimited
+Only surface mount components included
+
+RefDes,Layer,LocationX,LocationY,Rotation
+C1,Bottom,1.870,0.992,180
+C2,Top,2.587,1.106,180
+C3,Top,2.587,0.894,180
+L1,Top,0.197,1.142,0
+Q1,Bottom,2.665,1.106,90
+R1,Bottom,2.264,0.953,0
+R2,Bottom,1.614,0.941,0
+R3,Bottom,2.618,0.807,90
+R4,Bottom,2.618,0.610,90
+R5,Bottom,0.492,0.728,270
+R6,Bottom,0.197,1.142,0
+R7,Bottom,1.614,0.780,0
+SJ_A0,Bottom,1.634,1.157,90
+SJ_A1,Bottom,1.772,1.157,90
+SJ_A2,Bottom,1.909,1.157,90
+SJ_A3,Bottom,2.047,1.157,90
+SJ_A4,Bottom,2.185,1.157,90
+SJ_A5,Bottom,2.323,1.157,90
+U1,Bottom,1.945,0.764,270

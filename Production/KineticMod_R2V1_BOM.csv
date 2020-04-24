@@ -1,0 +1,19 @@
+No.,Design Ref,Description,Value,Package,Qty,Notes
+1,C1,Capacitor,10 uF,C1206,1,
+2,C2,Polarized capacitor,1000 uF,7343,1,Mouser No: 581-TAJE108M006RNJ
+3,L1,Led,Green,1206,1,
+4,Q1,Mosfet P-CH 30V,AOD417,TO252,1,https://www.digikey.es/product-detail/es/alpha-omega-semiconductor-inc/AOD417/785-1106-1-ND/1856049
+5,"R1, R2",Resistor array 4 resistor,10K,603,2,Mouser No: 667-EXB-38V103JV
+6,"R3, R4, R5",Resistor array 4 resistor,220,603,3,Mouser No: 667-EXB-38V221JV
+7,R6,Resistor,470,R1206,1,
+8,R7,Resistor,10K,R1206,1,
+9,SV1,"Pin header 2,54 - Right Angle",SFH11-PBPC-D08-RA-BK,,1,Sullins Part No: SFH11-PBPC-D08-RA-BK
+10,U1,Controlador IC 16 Salida Lineal PWM,PCA9685,TSSOP28,1,
+11,"JP1, JP2","Pin header 2,54 - Vertical",1x6,Black,2,"Soldered on Top layer in the column ""-"""
+12,"JP3, JP4","Pin header 2,54 - Vertical",1x6,Red,2,"Soldered on Top layer in the column ""+"""
+13,"JP5, JP6","Pin header 2,54 - Vertical",1x6,Yellow,2,"Soldered on Top layer in the column ""S"""
+14,JP7,Terminal block 3.5mm,1x2,Through Hole,1,https://www.digikey.com/product-detail/en/amphenol-anytek/T50201500000G/T50201500000G-ND/4940066
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,12,
