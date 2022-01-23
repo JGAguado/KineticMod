@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -67,6 +67,8 @@
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -162,52 +164,6 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="frames">
-<description>&lt;b&gt;Frames for Sheet and Layout&lt;/b&gt;</description>
-<packages>
-</packages>
-<symbols>
-<symbol name="A4L-LOC">
-<wire x1="256.54" y1="3.81" x2="256.54" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="256.54" y1="8.89" x2="256.54" y2="13.97" width="0.1016" layer="94"/>
-<wire x1="256.54" y1="13.97" x2="256.54" y2="19.05" width="0.1016" layer="94"/>
-<wire x1="256.54" y1="19.05" x2="256.54" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="161.29" y1="3.81" x2="161.29" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="161.29" y1="24.13" x2="215.265" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="24.13" x2="256.54" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="246.38" y1="3.81" x2="246.38" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="246.38" y1="8.89" x2="256.54" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="246.38" y1="8.89" x2="215.265" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="8.89" x2="215.265" y2="3.81" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="8.89" x2="215.265" y2="13.97" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="13.97" x2="256.54" y2="13.97" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="13.97" x2="215.265" y2="19.05" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="19.05" x2="256.54" y2="19.05" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="19.05" x2="215.265" y2="24.13" width="0.1016" layer="94"/>
-<text x="217.17" y="15.24" size="2.54" layer="94" font="vector">&gt;DRAWING_NAME</text>
-<text x="217.17" y="10.16" size="2.286" layer="94" font="vector">&gt;LAST_DATE_TIME</text>
-<text x="230.505" y="5.08" size="2.54" layer="94" font="vector">&gt;SHEET</text>
-<text x="216.916" y="4.953" size="2.54" layer="94" font="vector">Sheet:</text>
-<frame x1="0" y1="0" x2="260.35" y2="179.07" columns="6" rows="4" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="A4L-LOC" prefix="FRAME" uservalue="yes">
-<description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
-DIN A4, landscape with location and doc. field</description>
-<gates>
-<gate name="G$1" symbol="A4L-LOC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SparkFun">
 <packages>
 </packages>
@@ -11407,6 +11363,51 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="SpaceDIY_symbols">
+<packages>
+</packages>
+<symbols>
+<symbol name="A4L-LOC">
+<wire x1="256.54" y1="3.81" x2="256.54" y2="8.89" width="0.1016" layer="94"/>
+<wire x1="256.54" y1="8.89" x2="256.54" y2="13.97" width="0.1016" layer="94"/>
+<wire x1="256.54" y1="13.97" x2="256.54" y2="19.05" width="0.1016" layer="94"/>
+<wire x1="256.54" y1="19.05" x2="256.54" y2="24.13" width="0.1016" layer="94"/>
+<wire x1="161.29" y1="3.81" x2="161.29" y2="24.13" width="0.1016" layer="94"/>
+<wire x1="161.29" y1="24.13" x2="215.265" y2="24.13" width="0.1016" layer="94"/>
+<wire x1="215.265" y1="24.13" x2="256.54" y2="24.13" width="0.1016" layer="94"/>
+<wire x1="256.54" y1="8.89" x2="215.265" y2="8.89" width="0.1016" layer="94"/>
+<wire x1="215.265" y1="8.89" x2="215.265" y2="3.81" width="0.1016" layer="94"/>
+<wire x1="215.265" y1="8.89" x2="215.265" y2="13.97" width="0.1016" layer="94"/>
+<wire x1="215.265" y1="13.97" x2="256.54" y2="13.97" width="0.1016" layer="94"/>
+<wire x1="215.265" y1="13.97" x2="215.265" y2="19.05" width="0.1016" layer="94"/>
+<wire x1="215.265" y1="19.05" x2="256.54" y2="19.05" width="0.1016" layer="94"/>
+<wire x1="215.265" y1="19.05" x2="215.265" y2="24.13" width="0.1016" layer="94"/>
+<text x="217.17" y="15.24" size="2.54" layer="94">By J.G.Aguado</text>
+<text x="217.17" y="10.16" size="2.286" layer="94">&gt;LAST_DATE_TIME</text>
+<text x="227.965" y="5.08" size="2.54" layer="94">&gt;SHEET</text>
+<text x="216.916" y="4.953" size="2.54" layer="94">Sheet:</text>
+<frame x1="0" y1="0" x2="260.35" y2="179.07" columns="6" rows="4" layer="94"/>
+<text x="217.17" y="20.32" size="2.54" layer="94">&gt;DRAWING_NAME</text>
+<text x="163.83" y="20.32" size="2.54" layer="94">NOTES:</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="A4L-LOC" prefix="FRAME" uservalue="yes">
+<description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
+DIN A4, landscape with location and doc. field</description>
+<gates>
+<gate name="G$1" symbol="A4L-LOC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -11419,7 +11420,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="FRAME1" library="frames" deviceset="A4L-LOC" device=""/>
 <part name="H1" library="holes" deviceset="MOUNT-PAD-ROUND" device="3.2" value=""/>
 <part name="H2" library="holes" deviceset="MOUNT-PAD-ROUND" device="3.2" value=""/>
 <part name="GND34" library="SparkFun" deviceset="GND" device=""/>
@@ -11483,11 +11483,11 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="L1" library="SpaceDIY_passive_components" deviceset="LED1206" device="" value="Green"/>
 <part name="U$8" library="microbuilder" deviceset="GND" device=""/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="D/7343-31R" package3d_urn="urn:adsk.eagle:package:23417/2" value="470uF"/>
+<part name="FRAME1" library="SpaceDIY_symbols" deviceset="A4L-LOC" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="218.44" y="15.24" size="2.54" layer="94">By J.G.Aguado</text>
 <text x="66.548" y="79.756" size="2.032" layer="102" font="vector">Pressure</text>
 <text x="63.246" y="117.348" size="2.032" layer="102" font="vector">Humidity</text>
 <text x="177.8" y="81.28" size="1.778" layer="94">SCL</text>
@@ -11497,14 +11497,8 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <text x="20.32" y="149.86" size="1.778" layer="97">1 + A5 + A4 + A3 + A2 + A1 +A1 + RW</text>
 <text x="38.1" y="152.4" size="1.778" layer="97">I2C Address =</text>
 <text x="30.48" y="144.78" size="1.778" layer="97">Open = 0 / Closed = 1</text>
-<text x="248.92" y="5.08" size="2.54" layer="94">R2</text>
 </plain>
 <instances>
-<instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
-<attribute name="DRAWING_NAME" x="168.91" y="12.7" size="5.08" layer="94" font="vector"/>
-<attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94" font="vector"/>
-<attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94" font="vector"/>
-</instance>
 <instance part="H1" gate="G$1" x="231.14" y="96.52" smashed="yes" rot="R90">
 <attribute name="NAME" x="230.5558" y="99.314" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="233.6038" y="99.314" size="1.778" layer="96" rot="R90"/>
@@ -11786,6 +11780,11 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <instance part="C3" gate="G$1" x="223.52" y="50.8" smashed="yes" rot="MR0">
 <attribute name="NAME" x="222.504" y="51.435" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="222.504" y="46.609" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
+<attribute name="SHEET" x="227.965" y="5.08" size="2.54" layer="94"/>
+<attribute name="DRAWING_NAME" x="217.17" y="20.32" size="2.54" layer="94"/>
 </instance>
 </instances>
 <busses>
